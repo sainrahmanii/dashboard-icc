@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ICC</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../../../dist/output.css">
+
+    <link rel="shortcut icon" href="../../images/sain.png" type="image/x-icon">
+
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="w-full bg-base-100 fixed bg-white shadow-lg top-0 left-0 right-0 z-10">
+        <div class="py-3 justify-between flex px-10 items-center">
+            <img src="../../images/logo.png" alt="" class="w-32">
+            <div class="profil flex justify-center items-center">
+                <h3 class="text-xl pr-7">Halo, <b>Husain Rahmani</b></h3>
+                <img src="../../images/sain.png" alt="" class="w-16">
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <div class="grid grid-cols-4 gap-5 px-10 mt-32">
+        <!-- sidebar -->
+        <aside class="fixed">
+            <a href="../index.html">
+                <div class="dashboard hover:cursor-pointer">
+                    <div class="hover:bg-blue-500 bg-gray-100 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+                        </svg>
+                        <h3 class="pl-2">Dashboard</h3>
+                    </div>
+                </div>
+            </a>
+            <div class="dashboard hover:cursor-pointer">
+                <div class="bg-blue-500 px-4 py-2 flex mt-2 text-white font-bold rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                    </svg>                                   
+                    <h3 class="pl-2">Laporan</h3>
+                </div>
+            </div>
+            <div class="dashboard hover:cursor-pointer">
+                <div class="hover:bg-blue-500 bg-gray-100 mt-2 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>                                  
+                    <h3 class="pl-2">Logistik</h3>
+                </div>
+            </div>
+            <div class="dashboard hover:cursor-pointer">
+                <div class="hover:bg-blue-500 bg-gray-100 mt-2 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+                    </svg>                                                   
+                    <h3 class="pl-2">Posko Gempa</h3>
+                </div>
+            </div>
+            <div class="dashboard hover:cursor-pointer">
+                <div class="hover:bg-blue-500 bg-gray-100 mt-2 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>                                                                    
+                    <h3 class="pl-2">Pengiriman</h3>
+                </div>
+            </div>
+            <div class="dashboard hover:cursor-pointer">
+                <div class="hover:bg-blue-500 bg-gray-100 mt-2 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>                                                                                     
+                    <h3 class="pl-2">Profil</h3>
+                </div>
+            </div>
+            <div class="dashboard hover:cursor-pointer">
+                <div class="hover:bg-blue-500 bg-gray-100 mt-2 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1012.728 0M12 3v9" />
+                    </svg>                                                                                      
+                    <h3 class="pl-2">Keluar</h3>
+                </div>
+            </div>
+        </aside>
+        <!-- end sidebar -->
+
+        <!-- content -->
+        <main class="max-w-6xl ml-56 col-span-4">
+            <div class="bg-base-100 shadow-xl rounded-lg py-5 px-5">
+                <h1 class="text-center font-bold text-2xl">Laporan Bencana</h1>
+                <table class="w-full mt-2">
+                    <!-- head -->
+                    <thead class="bg-slate-200">
+                      <tr>
+                        <th class="p-3 whitespace-nowrap tracking-wide">No</th>
+                        <th class="p-3 whitespace-nowrap tracking-wide">Nama</th>
+                        <th class="p-3 whitespace-nowrap tracking-wide">Tanggal Kejadian</th>
+                        <th class="p-3 whitespace-nowrap tracking-wide">Waktu</th>
+                        <th class="p-3 whitespace-nowrap tracking-wide">Dll</th>
+                        <th class="p-3 whitespace-nowrap tracking-wide">Aksi</th>
+                      </tr>
+                    </thead>
+                    <!-- tbody -->
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-base-200 text-center">
+                            <td class="p-3 whitespace-nowrap">1</td>
+                            <td class="p-3 whitespace-nowrap">Fulan</td>
+                            <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
+                            <td class="p-3 whitespace-nowrap">18.00</td>
+                            <td class="p-3 whitespace-nowrap">Testing</td>
+                            <td class="p-3 whitespace-nowrap flex justify-center">
+                                <label for="show-modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-base-200 text-center">
+                            <td class="p-3 whitespace-nowrap">2</td>
+                            <td class="p-3 whitespace-nowrap">Fulan</td>
+                            <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
+                            <td class="p-3 whitespace-nowrap">18.00</td>
+                            <td class="p-3 whitespace-nowrap">Testing</td>
+                            <td class="p-3 whitespace-nowrap flex justify-center">
+                            <label for="show-modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </label>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-base-200 text-center">
+                            <td class="p-3 whitespace-nowrap">3</td>
+                            <td class="p-3 whitespace-nowrap">Fulan</td>
+                            <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
+                            <td class="p-3 whitespace-nowrap">18.00</td>
+                            <td class="p-3 whitespace-nowrap">Testing</td>
+                            <td class="p-3 whitespace-nowrap flex justify-center">
+                            <label for="show-modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </label>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-base-200 text-center">
+                            <td class="p-3 whitespace-nowrap">4</td>
+                            <td class="p-3 whitespace-nowrap">Fulan</td>
+                            <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
+                            <td class="p-3 whitespace-nowrap">18.00</td>
+                            <td class="p-3 whitespace-nowrap">Testing</td>
+                            <td class="p-3 whitespace-nowrap flex justify-center">
+                            <label for="show-modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- paginate -->
+            <div class="flex ml-96 items-center justify-center mt-2 bg-blue-500 rounded-full fixed mx-5 py-2">
+                    <button class="hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+                        </svg>                                      
+                    </button>
+                    <div class="angka text-white px-5 font-bold">
+                        <p>12</p>
+                    </div>
+                    <button class="hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                        </svg> 
+                    </button>  
+            </div>
+            <!-- end paginate -->
+        </main>
+        <!-- end content -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div  class="bg-blue-500 w-full py-3 fixed bottom-0 right-0 left-0">
+            <h2 class="text-center text-white">&copy; All Rights Reserved, Copyright IT Charity Class For Cianjur 2022</h2>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- modal -->
+    <input type="checkbox" id="show-modal" class="modal-toggle" />
+    <div class="modal">
+          <div class="modal-box">
+            <label for="show-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <button class="w-full text-white font-bold py-2 bg-emerald-500 hover:bg-emerald-700 rounded-full mt-3">UPDATE</button>
+            <a href="./detail.html"><button class="w-full text-white font-bold py-2 bg-cyan-500 hover:bg-cyan-700 rounded-full mt-3">DETAIL LAPORAN</button></a>
+            <button class="w-full text-white font-bold py-2 bg-red-500 hover:bg-red-700 rounded-full mt-3">DAFTAR POSKO</button>
+          </div>
+    </div>
+    <!-- end modal -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
