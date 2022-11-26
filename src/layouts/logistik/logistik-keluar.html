@@ -45,9 +45,9 @@
                     </div>
                 </div>
             </a>
-            <a href="./index.html">
+            <a href="../laporan/index.html">
                 <div class="dashboard hover:cursor-pointer">
-                    <div class="bg-blue-500 px-4 py-2 flex mt-2 text-white font-bold rounded-lg">
+                    <div class="hover:bg-blue-500 bg-gray-100 px-4 py-2 flex hover:text-white font-bold rounded-lg mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
                         </svg>                                   
@@ -55,9 +55,9 @@
                     </div>
                 </div>
             </a>
-            <a href="../logistik/index.html">
+            <a href="./index.html">
                 <div class="dashboard hover:cursor-pointer">
-                    <div class="hover:bg-blue-500 bg-gray-100 mt-2 px-4 py-2 flex hover:text-white font-bold rounded-lg">
+                    <div class="bg-blue-500 px-4 py-2 flex mt-2 text-white font-bold rounded-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                         </svg>                                  
@@ -119,8 +119,30 @@
         <!-- content -->
         <main class="max-w-6xl ml-56 col-span-4">
             <div class="bg-base-100 shadow-xl rounded-lg py-5 px-5">
-                <h1 class="text-center font-bold text-2xl">Laporan Bencana</h1>
-                <div class="h-80 overflow-y-auto scrollbar scrollbar-thumb-blue-500 scrollbar-thin">
+                <h1 class="text-center font-bold text-2xl">Logistik</h1>
+                <div class="flex justify-between mb-2">
+                    <div>
+                        <a href="./index.html">
+                            <button class="px-3 py-2 bg-slate-200 rounded-lg font-bold">
+                                Daftar Logistik
+                            </button>
+                        </a>
+                        <a href="./logistik-masuk.html">
+                            <button class="px-3 py-2 bg-slate-200 rounded-lg font-bold ml-2">
+                                Logistik Masuk
+                            </button>
+                        </a>
+                        <a href="./logistik-keluar.html">
+                            <button class="px-3 py-2 bg-blue-400 rounded-lg font-bold ml-2 text-white">
+                                Logistik Keluar
+                            </button>
+                        </a>
+                    </div>
+                    <label for="show-modal" class="px-3 py-2 bg-slate-200 rounded-lg font-bold cursor-pointer">
+                        Tambah
+                    </label>
+                </div>
+                <div class="h-64 overflow-y-auto scrollbar scrollbar-thumb-blue-500 scrollbar-thin">
                     <div class="mt-2 w-full">
                         <table class="w-full mt-2">
                             <!-- head -->
@@ -128,88 +150,47 @@
                               <tr>
                                 <th class="p-3 whitespace-nowrap tracking-wide">No</th>
                                 <th class="p-3 whitespace-nowrap tracking-wide">Nama</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Tanggal Kejadian</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Waktu</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Dll</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Aksi</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">Bentuk</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">Kuantitas</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">Satuan</th>
                               </tr>
                             </thead>
                             <!-- tbody -->
                             <tbody class="divide-y">
                                 <tr class="hover:bg-base-200 text-center">
                                     <td class="p-3 whitespace-nowrap">1</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                        <label for="show-modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            </svg>
-                                        </label>
-                                    </td>
+                                    <td class="p-3 whitespace-nowrap">Beras</td>
+                                    <td class="p-3 whitespace-nowrap">Bahan Pangan</td>
+                                    <td class="p-3 whitespace-nowrap">20</td>
+                                    <td class="p-3 whitespace-nowrap">Kg</td>
                                 </tr>
                                 <tr class="hover:bg-base-200 text-center">
                                     <td class="p-3 whitespace-nowrap">2</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
+                                    <td class="p-3 whitespace-nowrap">Beras</td>
+                                    <td class="p-3 whitespace-nowrap">Bahan Pangan</td>
+                                    <td class="p-3 whitespace-nowrap">20</td>
+                                    <td class="p-3 whitespace-nowrap">Kg</td>
                                 </tr>
                                 <tr class="hover:bg-base-200 text-center">
                                     <td class="p-3 whitespace-nowrap">3</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
+                                    <td class="p-3 whitespace-nowrap">Beras</td>
+                                    <td class="p-3 whitespace-nowrap">Bahan Pangan</td>
+                                    <td class="p-3 whitespace-nowrap">20</td>
+                                    <td class="p-3 whitespace-nowrap">Kg</td>
                                 </tr>
                                 <tr class="hover:bg-base-200 text-center">
                                     <td class="p-3 whitespace-nowrap">4</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
+                                    <td class="p-3 whitespace-nowrap">Beras</td>
+                                    <td class="p-3 whitespace-nowrap">Bahan Pangan</td>
+                                    <td class="p-3 whitespace-nowrap">20</td>
+                                    <td class="p-3 whitespace-nowrap">Kg</td>
                                 </tr>
                                 <tr class="hover:bg-base-200 text-center">
                                     <td class="p-3 whitespace-nowrap">5</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
+                                    <td class="p-3 whitespace-nowrap">Beras</td>
+                                    <td class="p-3 whitespace-nowrap">Bahan Pangan</td>
+                                    <td class="p-3 whitespace-nowrap">20</td>
+                                    <td class="p-3 whitespace-nowrap">Kg</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -219,24 +200,58 @@
             
             <!-- paginate -->
             <div class="flex ml-96 items-center justify-center mt-2 bg-blue-500 rounded-full fixed mx-5 py-2">
-                    <button class="hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-                        </svg>                                      
-                    </button>
-                    <div class="angka text-white px-5 font-bold">
-                        <p>12</p>
-                    </div>
-                    <button class="hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg> 
-                    </button>  
+                <button class="hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+                    </svg>                                      
+                </button>
+                <div class="angka text-white px-5 font-bold">
+                    <p>12</p>
+                </div>
+                <button class="hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                    </svg> 
+                </button>  
             </div>
             <!-- end paginate -->
         </main>
         <!-- end content -->
     </div>
+
+    <!-- modal -->
+    <input type="checkbox" id="show-modal" class="modal-toggle" />
+    <div class="modal">
+          <div class="modal-box">
+            <label for="show-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <div class="block">
+                <div>
+                    <label class="label font-bold">Nama Logistik</label>
+                    <select class="outline-none w-full border-2 rounded-full  appearance-none text-center px-5 py-2 border outline-none">
+                        <option disabled selected>Nama Logistik</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                        <option>Jawa Timur</option>
+                    </select>
+                    <label class="label font-bold">Instansi Pemasok</label>
+                    <input type="text" class="w-full rounded-full px-5 py-2 border outline-none" placeholder="Instansi Pemasok">                  
+                    <label class="label font-bold">PIC</label>
+                    <select class="outline-none w-full border-2 rounded-full  appearance-none text-center px-5 py-2 border outline-none">
+                        <option disabled selected>PIC</option>
+                        <option>Jonggol</option>
+                        <option>Pekalipan</option>
+                        <option>At-Taqwa</option>
+                    </select>
+                    <label class="label font-bold">Kuantitas</label>
+                    <input type="number" class="w-full rounded-full px-5 py-2 border outline-none" placeholder="Kuantitas">
+                    <label class="label font-bold">Nama Pemasok</label>
+                    <input type="text" class="w-full rounded-full px-5 py-2 border outline-none" placeholder="Nama Pemasok">
+                </div>
+                <button class="w-full py-2 mt-3 font-bold text-white rounded-full bg-emerald-400">SUBMIT</button>
+            </div>
+          </div>
+    </div>
+    <!-- end modal -->
 
     <!-- footer -->
     <footer>
@@ -245,18 +260,6 @@
         </div>
     </footer>
     <!-- end footer -->
-
-    <!-- modal -->
-    <input type="checkbox" id="show-modal" class="modal-toggle" />
-    <div class="modal">
-          <div class="modal-box">
-            <label for="show-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-            <a href="./update.html"><button class="w-full text-white font-bold py-2 bg-emerald-500 hover:bg-emerald-700 rounded-full mt-3">UPDATE LAPORAN</button></a>
-            <a href="./detail.html"><button class="w-full text-white font-bold py-2 bg-cyan-500 hover:bg-cyan-700 rounded-full mt-3">DETAIL LAPORAN</button></a>
-            <a href="./posko.html"><button class="w-full text-white font-bold py-2 bg-indigo-500 hover:bg-indigo-700 rounded-full mt-3">DAFTAR POSKO</button></a>
-          </div>
-    </div>
-    <!-- end modal -->
 
     <script src="https://cdn.tailwindcss.com"></script>
 </body>

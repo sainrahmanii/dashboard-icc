@@ -9,6 +9,7 @@
     <!-- link css -->
     <link rel="stylesheet" href="../../../dist/output.css">
 
+    <!-- icon -->
     <link rel="shortcut icon" href="../../images/sain.png" type="image/x-icon">
 
     <!-- daisyui -->
@@ -117,10 +118,10 @@
         <!-- end sidebar -->
 
         <!-- content -->
-        <main class="max-w-6xl ml-56 col-span-4">
+        <main class="max-w-6xl h-96 ml-56 col-span-4">
             <div class="bg-base-100 shadow-xl rounded-lg py-5 px-5">
-                <h1 class="text-center font-bold text-2xl">Laporan Bencana</h1>
-                <div class="h-80 overflow-y-auto scrollbar scrollbar-thumb-blue-500 scrollbar-thin">
+                <h1 class="text-center font-bold text-2xl">Posko Bencana</h1>
+                <div class="h-90 overflow-y-auto scrollbar scrollbar-thumb-blue-500 scrollbar-thin">
                     <div class="mt-2 w-full">
                         <table class="w-full mt-2">
                             <!-- head -->
@@ -128,9 +129,10 @@
                               <tr>
                                 <th class="p-3 whitespace-nowrap tracking-wide">No</th>
                                 <th class="p-3 whitespace-nowrap tracking-wide">Nama</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Tanggal Kejadian</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Waktu</th>
-                                <th class="p-3 whitespace-nowrap tracking-wide">Dll</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">Bencana</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">PIC</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">Lokasi</th>
+                                <th class="p-3 whitespace-nowrap tracking-wide">Update Terakhir</th>
                                 <th class="p-3 whitespace-nowrap tracking-wide">Aksi</th>
                               </tr>
                             </thead>
@@ -138,10 +140,11 @@
                             <tbody class="divide-y">
                                 <tr class="hover:bg-base-200 text-center">
                                     <td class="p-3 whitespace-nowrap">1</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
+                                    <td class="p-3 whitespace-nowrap">Posko 1</td>
+                                    <td class="p-3 whitespace-nowrap">Gempa Bumi</td>
                                     <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
+                                    <td class="p-3 whitespace-nowrap">Kelurahan, Kota</td>
+                                    <td class="p-3 whitespace-nowrap">Rehabilitas</td>
                                     <td class="p-3 whitespace-nowrap flex justify-center">
                                         <label for="show-modal">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
@@ -151,91 +154,24 @@
                                         </label>
                                     </td>
                                 </tr>
-                                <tr class="hover:bg-base-200 text-center">
-                                    <td class="p-3 whitespace-nowrap">2</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-base-200 text-center">
-                                    <td class="p-3 whitespace-nowrap">3</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-base-200 text-center">
-                                    <td class="p-3 whitespace-nowrap">4</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-base-200 text-center">
-                                    <td class="p-3 whitespace-nowrap">5</td>
-                                    <td class="p-3 whitespace-nowrap">Fulan</td>
-                                    <td class="p-3 whitespace-nowrap">32 Desember 1999</td>
-                                    <td class="p-3 whitespace-nowrap">18.00</td>
-                                    <td class="p-3 whitespace-nowrap">Testing</td>
-                                    <td class="p-3 whitespace-nowrap flex justify-center">
-                                    <label for="show-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 cursor-pointer bg-blue-600 hover:bg-blue-400 px-2 py-2 rounded-lg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            
-            <!-- paginate -->
-            <div class="flex ml-96 items-center justify-center mt-2 bg-blue-500 rounded-full fixed mx-5 py-2">
-                    <button class="hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-                        </svg>                                      
-                    </button>
-                    <div class="angka text-white px-5 font-bold">
-                        <p>12</p>
-                    </div>
-                    <button class="hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mx-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg> 
-                    </button>  
-            </div>
-            <!-- end paginate -->
         </main>
         <!-- end content -->
+
+        <!-- modal -->
+        <input type="checkbox" id="show-modal" class="modal-toggle" />
+        <div class="modal">
+            <div class="modal-box">
+                <label for="show-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <a href="./update-posko.html"><button class="w-full text-white font-bold py-2 bg-emerald-500 hover:bg-emerald-700 rounded-full mt-3">UPDATE POSKO</button></a>
+                <a href="./detail-posko.html"><button class="w-full text-white font-bold py-2 bg-cyan-500 hover:bg-cyan-700 rounded-full mt-3">DETAIL POSKO</button></a>
+            </div>
+        </div>
+        <!-- end modal -->
     </div>
 
     <!-- footer -->
@@ -245,19 +181,6 @@
         </div>
     </footer>
     <!-- end footer -->
-
-    <!-- modal -->
-    <input type="checkbox" id="show-modal" class="modal-toggle" />
-    <div class="modal">
-          <div class="modal-box">
-            <label for="show-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-            <a href="./update.html"><button class="w-full text-white font-bold py-2 bg-emerald-500 hover:bg-emerald-700 rounded-full mt-3">UPDATE LAPORAN</button></a>
-            <a href="./detail.html"><button class="w-full text-white font-bold py-2 bg-cyan-500 hover:bg-cyan-700 rounded-full mt-3">DETAIL LAPORAN</button></a>
-            <a href="./posko.html"><button class="w-full text-white font-bold py-2 bg-indigo-500 hover:bg-indigo-700 rounded-full mt-3">DAFTAR POSKO</button></a>
-          </div>
-    </div>
-    <!-- end modal -->
-
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
